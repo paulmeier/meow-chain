@@ -3,8 +3,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/spf13/cobra"
 	"os"
+
+	"github.com/spf13/cobra"
 )
 
 func main() {
@@ -17,10 +18,15 @@ func main() {
 
 	mcCmd.AddCommand(versionCmd)
 	mcCmd.AddCommand(balancesListCmd)
+	mcCmd.AddCommand(txCmd())
 
 	err := mcCmd.Execute()
 	if err != nil {
 		fmt.Println(os.Stderr, err)
 		os.Exit(1)
 	}
+}
+
+func incorrectUsageErr() error {
+	return fmt.Errorf("incorrect usage")
 }

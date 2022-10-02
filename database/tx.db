@@ -1,1 +1,8 @@
 {"from":"riley","to":"riley","value":3,"data":""}
+{"from":"riley","to":"riley","value":700,"data":"reward"}
+{"from":"riley","to":"toby","value":2000,"data":""}
+{"from":"riley","to":"riley","value":100,"data":"reward"}
+{"from":"toby","to":"riley","value":1,"data":""}
+{"from":"toby","to":"caesar","value":1000,"data":""}
+{"from":"toby","to":"riley","value":50,"data":""}
+{"from":"riley","to":"riley","value":100,"data":"reward"}
